@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A student-made interactive fan page celebrating Justin Bieber's music and journey.">
+    <title>Justin Bieber | Fan Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#home" aria-label="Go to the top">JB<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#eras">Eras</a>
+            <a href="#facts">Facts</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+        <button class="theme-button" id="themeButton" type="button" aria-label="Switch colour theme">
+            <span id="themeIcon" aria-hidden="true">☾</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">A fan-made celebration</p>
+                <h1>JUSTIN<br><span>BIEBER</span></h1>
+                <p class="hero-intro">From uploading covers in Stratford to becoming one of pop music's most recognisable voices.</p>
+                <div class="hero-actions">
+                    <a class="button primary-button" href="#eras">Explore his eras</a>
+                    <button class="button ghost-button" id="surpriseButton" type="button">Surprise me</button>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="photo-frame">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Justin_Bieber_20161111_009-2_(cropped).jpg"
+                        alt="Justin Bieber at an event in 2016"
+                    >
+                </div>
+                <div class="floating-note">EST. 2007</div>
+                <div class="sound-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="section-heading reveal">
+                <p class="eyebrow">The story</p>
+                <h2>A small-town voice that travelled worldwide.</h2>
+            </div>
+            <div class="about-grid">
+                <p class="lead reveal">Justin Drew Bieber is a Canadian singer who was discovered after his mother posted videos of his performances online. His early single “One Time” introduced him to a global audience, and his career has continued to evolve across pop, R&amp;B and electronic music.</p>
+                <div class="stats reveal">
+                    <article><strong>2009</strong><span>Debut EP released</span></article>
+                    <article><strong>6</strong><span>Studio albums through <em>Justice</em></span></article>
+                    <article><strong>∞</strong><span>Belieber energy</span></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="eras section" id="eras">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Discography highlights</p>
+                <h2>Pick your era.</h2>
+            </div>
+            <div class="era-grid">
+                <article class="era-card purple reveal" tabindex="0">
+                    <span class="era-year">2010</span>
+                    <div><p>Teen-pop breakthrough</p><h3>My World 2.0</h3></div>
+                    <span class="track">♪ Baby</span>
+                </article>
+                <article class="era-card pink reveal" tabindex="0">
+                    <span class="era-year">2015</span>
+                    <div><p>Electronic pop reinvention</p><h3>Purpose</h3></div>
+                    <span class="track">♪ Sorry</span>
+                </article>
+                <article class="era-card blue reveal" tabindex="0">
+                    <span class="era-year">2020</span>
+                    <div><p>R&amp;B-inspired chapter</p><h3>Changes</h3></div>
+                    <span class="track">♪ Intentions</span>
+                </article>
+                <article class="era-card orange reveal" tabindex="0">
+                    <span class="era-year">2021</span>
+                    <div><p>Hope, healing and reflection</p><h3>Justice</h3></div>
+                    <span class="track">♪ Peaches</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="facts section" id="facts">
+            <div class="fact-panel reveal">
+                <div>
+                    <p class="eyebrow">Did you know?</p>
+                    <h2>Random Bieber fact</h2>
+                </div>
+                <blockquote id="factText" aria-live="polite">He taught himself to play the piano, drums, guitar and trumpet.</blockquote>
+                <button class="button primary-button" id="factButton" type="button">Give me another fact</button>
+            </div>
+        </section>
+
+        <section class="quiz section" id="quiz">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Belieber check</p>
+                <h2>How well do you know Justin?</h2>
+            </div>
+            <form class="quiz-card reveal" id="quizForm">
+                <fieldset>
+                    <legend>1. In which country was Justin born?</legend>
+                    <label><input type="radio" name="q1" value="a"> United States</label>
+                    <label><input type="radio" name="q1" value="b"> Canada</label>
+                    <label><input type="radio" name="q1" value="c"> Australia</label>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Which album includes “Sorry”?</legend>
+                    <label><input type="radio" name="q2" value="a"> Purpose</label>
+                    <label><input type="radio" name="q2" value="b"> Changes</label>
+                    <label><input type="radio" name="q2" value="c"> Justice</label>
+                </fieldset>
+                <fieldset>
+                    <legend>3. How was Justin first widely discovered?</legend>
+                    <label><input type="radio" name="q3" value="a"> A television contest</label>
+                    <label><input type="radio" name="q3" value="b"> A school concert</label>
+                    <label><input type="radio" name="q3" value="c"> Videos posted online</label>
+                </fieldset>
+                <button class="button primary-button" type="submit">Check my score</button>
+                <p class="quiz-result" id="quizResult" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by a Belieber, for Beliebers.</p>
+        <p class="credit">Photo: Lou Stejskal / Wikimedia Commons · Educational fan project</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Playing your favourite era in spirit ♪</div>
+    <script src="script.js"></script>
+</body>
+</html>
