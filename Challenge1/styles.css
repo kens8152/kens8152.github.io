@@ -1,0 +1,99 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    color: black;
+    margin: 0;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.site-header h1{
+    color: palevioletred;
+    font-size: 3em;
+    text-align: center;
+}
+
+.site-header p {
+    font-style: italic;
+    color: gray;
+}
+
+section.about {
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#mascot-image {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+}
+.mascot-placeholder{
+    text-align: center;
+    width: 260px;
+    margin:auto;
+    background: #ffffff;
+    border: 2px solid black;
+    border-radius: 24px;
+}
+
+.buy-tickets {
+    padding: 12px 20px;
+    background-color: #38c818;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 2px 12px rgb(0, 229, 255);
+    transition: background 120ms ease, transform 80ms ease;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.buy-tickets:hover {
+    background-color: #139929;
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.make-donation {
+    padding: 12px 20px;
+    background-color: #2a18c8;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 2px 12px rgb(245, 3, 216);
+    transition: background 120ms ease, transform 80ms ease;
+    margin-right: 20px;
+}
+
+.make-donation:hover {
+    background-color: #131e99;
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.site-footer {
+    color: gray;
+    text-align: center;
+    border-top: 2px solid rgba(220, 220, 220, 0.856);
+    margin-top: 24px;
+    padding-top: 24px;
+    font-size: 0.9rem;
+}
+
+
+
+/* styles.css - Challenge #1 (Skeleton) */
